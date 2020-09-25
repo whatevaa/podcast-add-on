@@ -2,7 +2,7 @@
 
 const playButtons = document.getElementsByClassName("replay-button paused aod")
 
-// Get my image to the appropriate format
+// Get the ULR of the resource (the image on web_accessible_resources of manifest.json) in the format "moz-extension://<extension-UUID>/images/my-image.png"
 // const myImage = browser.runtime.getURL("icons/Cloud-Download-256.png");
 const myImage = browser.extension.getURL("icons/Cloud-Download-256.png");
 
