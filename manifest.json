@@ -1,20 +1,23 @@
 {
 
     "manifest_version": 2,
-    "name": "Borderify",
+    "name": "Podcast France Culture Téléchargement",
     "version": "1.0",
   
-    "description": "Adds a solid red border to all webpages matching mozilla.org.",
+    "description": "Téléchargement de podcasts France culture sur toutes les pages web correspondant à franceculture.fr",
   
     "icons": {
-      "48": "icons/border-48.png"
+      "48": "icons/icon-fc.png"
     },
   
     "content_scripts": [
       {
-        "matches": ["*://*.mozilla.org/*"],
-        "js": ["borderify.js"]
+        "matches": ["*://*.franceculture.fr/*"],
+        "js": ["downloadPodcast.js"],
+        "css": ["stylesDL.css"]
       }
-    ]
+    ],
+
+    "web_accessible_resources": ["icons/Cloud-Download-256.png"]
   
   }
